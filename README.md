@@ -11,10 +11,10 @@ All you need is a phone or laptop with Wi-Fi and the service password. No softwa
 ## Service mode
 
 1. On the Pumpomat board, set switch **SW1 "WLAN"** to **open** (slider **up**), then press **Reset**.
-   The green LED **double-flashes** while Wi-Fi is on. The display alternates between the readings, a Wi-Fi QR code and a browser QR code.
+   The green LED **double-flashes** while Wi-Fi is on. After the start the display shows a Wi-Fi QR code 3 times, with the box ID `Pumpomat-XXXX` and the address `192.168.4.1`. After that the status line alternates with the Wi-Fi name.
 2. Scan the Wi-Fi QR code, or select `Pumpomat-XXXX` in your Wi-Fi settings. The network has no password.
    - **Android:** when asked whether to stay connected without internet access, choose **Yes**. The page usually opens by itself.
-   - **iPhone:** in the login window tap **Cancel**, choose **Use Without Internet**, then scan the browser QR code. Do not choose "Use Other Network", it disconnects from the Pumpomat Wi-Fi.
+   - **iPhone:** in the login window tap **Cancel**, choose **Use Without Internet**, then open `http://192.168.4.1` in Safari. Do not choose "Use Other Network", it disconnects from the Pumpomat Wi-Fi.
    - Without a QR code: enter `http://192.168.4.1` in the browser.
 3. Log in with the **service password**. After **3 wrong entries** the login is locked and the display shows "WEB GESPERRT". Press **Reset** to unlock.
 4. When you are done, set **SW1** back to **closed** (slider **down**) and press **Reset**. If you forget, Wi-Fi switches itself off after 15 minutes without access.
@@ -35,7 +35,7 @@ If anything goes wrong, the previous version keeps running. An interrupted updat
 ## Settings and statistics
 
 - **Settings:** the control parameters (target pressure etc.). Change a value and tap **Apply**. Settings are kept during an update.
-- **Save and load:** save the settings to a file before larger changes, and load them back later.
+- **Save and load:** save the settings to a file before larger changes, and load them back later. On the iPhone use Safari for this, downloads do not work in the Wi-Fi login window.
 - **Statistics:** operating hours, motor starts, faults and the most recent events. The "since service" column can be reset (tap twice).
 - **Factory settings** (under **More**, tap twice) sets all parameters back to their defaults.
 
